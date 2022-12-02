@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.site-header{
+    background-color: greenyellow;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content-area h1{
+    color:red;
+}
+
+.sidebar-right h1{
+    background-color: blue;
+    color:rgb(248, 8, 8);
+}
+
+.sidebar-right p{
+    background-color: blue;
+    color:white;
+}
+
+
+.site-footer{
+    background-color: greenyellow;
+    color:red;
+    padding: 0;
+    margin: 0;
+}
+
+.content-area{
+    border: 5px solid red;
+    background-color: rgb(177, 176, 176);
+    overflow: hidden;
+}
+
+@media screen and (min-width:1120px){
+    .content-area{
+        display: flex;
+    }
+
+    .main-content-area{
+        width:70%;
+    }
+
+    .sidebar-right{
+        background-color: rgb(101, 155, 2);
+        
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 30%;
+        
+    }
+
+    .articulo-pelicula:nth-child(1),
+    .articulo-pelicula:nth-child(2){
+            flex-basis: 49%;
+        }
+    
+    
+    .articulo-pelicula:nth-child(3),
+    .articulo-pelicula:nth-child(4),
+    .articulo-pelicula:nth-child(5){
+            flex-basis: 32%;
+        }
+       
+    
+       .articulo-pelicula:nth-child(6){
+        flex-basis: 100%;
+       }
+
+}
+
+    
+
+/*Star the header style*/
+.site-header{
+    height: 350px;
+    display: flex;
+    flex-flow: column;
+}
+
+.site-info{
+    background-color: black;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    
+}
+
+.site-info h1{
+    color:white;
+    display:block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 4rem;
+    /*padding-bottom: 0.5rem;*/
+    font-size: 50px;
+
+}
+
+.site-info p{
+    display:block;
+    font-weight: lighter;
+    color:#f7d002;
+    /*padding-bottom: 5rem;*/
+}
+
+.main-menu{
+    background-color: #f7d002;
+    padding: 1rem;
+}
+
+/*End the header style*/
+
+/*Star content area style*/
+.main-content-area{
+    padding: 2em;
+    border: 5px solid black;
+    position: relative;
+}
+
+.section-peliculas{
+    position: relative;
+    border: 5px solid rgb(132, 134, 4);
+}
+
+.articulo-pelicula{
+    margin-bottom: 2em;
+    background-color: white;
+    border: 5px solid rgb(243, 26, 26);
+    position: relative;
+    
+}
+
+.clic-pelicula{
+    text-decoration: none;
+
+}
+
+.imagen-pelicula img{
+    width: 100%;
+}
+
+.clic-pelicula .texto-pelicula h2{
+    background-color: #f7d002;
+    display:block;
+    text-align: center;
+    text-transform: capitalize;
+    color:black;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+.texto-pelicula p{
+    color:black;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/*End content area style*/
+
+/*Star flexbox articulos style*/
+@media screen and (min-width:810px){
+   .section-peliculas{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   }
+
+   .articulo-pelicula{
+    flex-basis: 49%;
+   }
+
+ 
+}
+/*End flexbox articulos style*/
+
