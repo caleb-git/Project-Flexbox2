@@ -188,6 +188,22 @@
 /*End flexbox articulos style*/
 
 /*Inicio Style Que ver Hoy*/
+.watch{
+    border:5px solid rgb(255, 0, 221);
+}
 
+.watch h2{
+    padding-bottom: 1em;
+    padding-top: 1em;
+    font-size: 25px;
+    color:black;
+    font-weight: bold;
+    background-color: #f5e4c9;
+}
+
+.watch-card{
+
+    border:5px solid rgb(17, 0, 255);
+}
 /*Fin Style Que ver Hoy*/
 
