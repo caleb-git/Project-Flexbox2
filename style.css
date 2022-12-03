@@ -183,6 +183,14 @@
     flex-basis: 49%;
    }
 
+   .watch-card{
+    display: flex;
+   }
+
+   .img-right{
+    order:2;
+   }
+
  
 }
 /*End flexbox articulos style*/
@@ -190,20 +198,77 @@
 /*Inicio Style Que ver Hoy*/
 .watch{
     border:5px solid rgb(255, 0, 221);
+    position: relative;
+    background-color: #f5e4c9;
 }
 
-.watch h2{
+.watch .section-header{
     padding-bottom: 1em;
     padding-top: 1em;
     font-size: 25px;
     color:black;
     font-weight: bold;
-    background-color: #f5e4c9;
+    background-color:#f5e4c9;
 }
 
 .watch-card{
-
+   
+    padding-bottom: 2em;
+    width:100%;
     border:5px solid rgb(17, 0, 255);
 }
+
+.watch-img{
+    position: relative;
+}
+
+.watch-img img{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+
+
+
+.watch-content{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: 2em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.watch-card .watch-content h2{
+    display: block;
+    font-size: 25px;
+    font-weight: bolder;
+    color:white;
+    padding-top: 2em;
+}
+
+.movie-info{
+    color:white;
+    margin-top: 0.5em;
+}
+
+.movie-info span{
+    color:white;
+    margin-top: 0.5em;
+    margin-right: 0.2em;
+}
+
+.movie-story{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.movie-info a{
+    color:white;
+}
+
+
 /*Fin Style Que ver Hoy*/
 
