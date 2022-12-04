@@ -76,6 +76,19 @@
         flex-basis: 100%;
        }
 
+       .download-content{
+        display: flex;
+        flex-grow: 1;
+       }
+    
+       .download-info{
+       }
+
+       .download-rating{
+        font-size: 12px;
+        text-align:center;
+         }
+
 }
 
     
@@ -191,6 +204,15 @@
     order:2;
    }
 
+   .download-content{
+    display: flex;
+    flex-grow: 1;
+   }
+
+   .download-info{
+    flex-grow: 1;
+   }
+
  
 }
 /*End flexbox articulos style*/
@@ -272,3 +294,171 @@
 
 /*Fin Style Que ver Hoy*/
 
+/*Inicio Styles Download*/
+.download{
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border: 5px solid blue;
+    background-color: white;
+}
+
+.download .section-header{
+    color:black;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border: 5px solid blue;
+}
+
+.download-card{
+    position: relative;
+    border: 5px solid rgb(255, 0, 221);
+}
+
+.download-img{
+    position: relative;
+    border: 5px solid rgb(183, 0, 255);
+}
+
+.download-img img{
+    width:100%;
+    height: 100%;
+}
+
+.download-content{
+    position: relative;
+    border: 5px solid rgb(0, 174, 255);
+}
+
+.download-content a{
+    position: relative;
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    font-weight: bolder;
+    padding: 10px 30px;
+    font-size: 18px;
+    border:5px solid rgb(0, 255, 106);
+    
+}
+
+.download-content a i{
+    font-size: 35px;
+}
+    
+
+
+.download-info{
+    border:5px solid rgb(145, 255, 0);
+}
+
+.download-genre{
+    display:flex;
+    border:5px solid rgb(255, 251, 0);
+}
+
+
+.download-genre h4{
+    color:black;
+    font-weight: bolder;
+    margin-right: 1em;
+    margin-bottom: 1.5em;
+}
+
+.download-genre p{
+    color:black;
+}
+
+.download-cast{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border:5px solid rgb(255, 166, 0);
+}
+
+.download-cast h4{
+    color:black;
+    font-weight: bolder;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+.download-cast img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.download-rating{
+    background-color: #f7d002;
+    color:black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 5px 15px;
+    border:5px solid rgb(255, 72, 0);
+}
+
+.download-rating .rate{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/*FIN Styles Download*/
+
+
+/*Inicio Styles Galería*/
+.gallery{
+    position: relative;
+    border: 5px solid blue;
+    background-color: white;
+}
+
+.gallery .section-header{
+    margin-top: 1em;
+    color:black;
+    font-size: 35px;
+    font-weight: bolder;
+    display: block;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.gallery-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    border: 5px solid rgb(111, 0, 255);
+}
+
+.gallery-img{
+    position: relative;
+    width:200px;
+    height: 180px;
+    flex-grow: 1;
+    margin: 0px 0px 8px 8px;
+}
+
+.gallery-img a{
+    position: relative;
+}
+
+.gallery-img a img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+/*Fin Styles Galería*/
