@@ -51,11 +51,11 @@
     }
 
     .sidebar-right{
-        background-color: rgb(101, 155, 2);
+        background-color: grey;
         
-        flex-grow: 0;
-        flex-shrink: 1;
-        flex-basis: 30%;
+        flex-grow: 1;
+        flex-basis: 0;
+        flex-shrink: 0;
         
     }
 
@@ -88,6 +88,25 @@
         font-size: 12px;
         text-align:center;
          }
+
+         .main-menu{
+            border:3px solid brown;
+        }
+    
+        .main-menu ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            border:5px solid green;
+        }
+    
+        .main-menu ul li{
+            padding-top: 1em;
+            padding-bottom: 1em;
+            text-align: center;
+            border:5px solid rgb(128, 87, 0);
+            flex-grow: 1;
+        }
 
 }
 
@@ -130,7 +149,31 @@
 
 .main-menu{
     background-color: #f7d002;
-    padding: 1rem;
+    padding: 0rem;
+}
+
+.main-menu ul{
+    list-style: none;
+}
+
+
+
+.main-menu ul li:hover{
+    background-color: black;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.main-menu ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.main-menu ul li:hover a{
+    color:#f7d002;
 }
 
 /*End the header style*/
@@ -458,7 +501,80 @@
     object-fit: cover;
 }
 
-
-
-
 /*Fin Styles Galería*/
+
+/*Inicio Style Sidebar*/
+
+
+.widget{
+    background-color: azure;
+    border:5px solid plum;
+}
+
+.widget-content{
+    padding: 2em;
+}
+
+.widget-content h3{
+    color:black;
+    background-color: white;
+    border:5px solid rgb(160, 221, 201);
+}
+
+.widget-content .sidebar-menu{
+    padding: 2em 2em 0em 2em;
+    background-color: white;
+    border:5px solid rgb(160, 221, 201);
+}
+
+.sidebar-menu ul{
+    list-style: none;
+}
+
+.sidebar-menu ul li{
+    list-style: none;
+    margin-bottom: 0.5em;
+}
+
+.sidebar-menu ul li a{
+    text-decoration: none;
+    color:black;
+    font-weight: bolder;
+}
+
+@media screen and (min-width:810px) and (max-width:1120px){
+    .sidebar-right{
+        background-color: rgb(204, 204, 207);
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .widget{
+        flex-basis: 48.5%;
+    }
+
+    .main-menu{
+        border:3px solid brown;
+    }
+
+    .main-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        border:5px solid green;
+    }
+
+    .main-menu ul li{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        border:5px solid rgb(128, 87, 0);
+        flex-grow: 1;
+    }
+
+   
+}
+
+/*FIN Style Sidebar*/
